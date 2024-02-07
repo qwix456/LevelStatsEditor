@@ -31,7 +31,7 @@ bool StatEditor::init(GJGameLevel* m_level) {
     createBackground("GJ_square01.png", {287.0f, 155.0f}, {255.0f, 212.0f}, 1.0f, 255, m_mainLayer);
     createLabel("Stats Editor", "goldFont.fnt", {285.0f, 240.0f}, 1.0f, m_mainLayer);
 
-    auto level_name = m_level->m_levelName.size() > 20 ? 0.4f : 0.5f;
+    auto level_name = m_level->m_levelName.size() > 20 ? 0.3f : 0.4f;
     createLabel(m_level->m_levelName, "bigFont.fnt", {280.0f, 210.0f}, level_name, m_mainLayer);
 
     createBackground("square02_001.png", {226.0f, 175.0f}, {220.0f, 69.0f}, 0.5f, 100, m_mainLayer);
